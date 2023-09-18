@@ -6,3 +6,8 @@ nav img {
     max-height: 50px;
 }
 
+.backgroundImage {
+    background-image: url("/media/homeBackgroundImage.png");
+    background-size: cover;
+    background-color: white;
+}
