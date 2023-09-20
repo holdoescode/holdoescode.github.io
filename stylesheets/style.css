@@ -1,13 +1,40 @@
 nav {
-    font-family: Arial, Helvetica, sans-serif; /* CHANGE */
+    font-family: 'Hind', sans-serif;
+    font-weight: 700;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px; /* Change to be responsive */
 }
 
 nav img {
     max-height: 50px;
 }
 
+
 .backgroundImage {
     background-image: url("/media/homeBackgroundImage.png");
     background-size: cover;
     background-color: white;
 }
+
+h1 {
+    font-family: 'Lalezar', cursive;
+    font-size: 80px; /* Change to be responsive */
+}
+
+h2 {
+    font-family: 'Hind', sans-serif;
+}
+
+h3 {
+    font-family: 'Karla', sans-serif;
+}
+
+button {
+    font-family: 'Hind', sans-serif;
+    background-color: transparent; 
+}
+
