@@ -5,6 +5,7 @@
         <title>Hollie Clarke | Software Developer | Portfolio</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="stylesheets/style.css">
+        <link rel="stylesheet" href="stylesheets/mobile-style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;700&family=Karla&family=Lalezar&display=swap" rel="stylesheet">
@@ -12,24 +13,38 @@
     </head>
 
     <header>
-        <nav>
+        <nav class="nav-container flex-container-nav">
             <a href="index.html"><img src="media/logoPlaceholder.png"></a>
             <a href="about.html">ABOUT</a>
             <a href="projects.html">PROJECTS</a>
             <a href="articles.html">ARTICLES</a>
             <a href="contact.html">CONTACT</a> <!--Placeholder: use link to footer -->
+            <div>
+                <!-- Insert icons here -->
+            </div>
         </nav>
     </header>
-    
+
     <body class="backgroundImage">
 
-        <main>
-            <h1>Hi,<br>I'm Hollie,<br>web developer.</h1>
-            <h2>HTML/CSS</h2>
-            <h2>JAVASCRIPT</h2>
-            <h3>Innovative and bold site design, beautifully crafted to your requirements</h3>
-            <button>WORK WITH ME</button> <!--CHANGE - add link or functionality -->
-            <img src="media/professional.jpg">
+        <main class="flex-container-main">
+
+            <div class="flex-item-main">
+                <h1>Hi,<br>I'm <span class="brightStyle">Hollie</span>,<br>web developer.</h1>
+
+                <div class="flex-container-headings">
+                    <div class="flex-container-lang">
+                        <h2 class="flex-item-lang" id="htmlLang">HTML/CSS</h2>
+                        <h2 class="flex-item-lang" id="JSLang">JAVASCRIPT</h2>
+                    </div>
+                        <h3 class="grid-item" id="tagline">Innovative and bold site design, beautifully crafted to your requirements</h3>
+                        <button class="grid-item brightStyle" id="workButton">WORK WITH ME</button> <!--CHANGE - add link or functionality -->
+                </div>
+                <br>
+            </div>
+
+            <img class="flex-item-main" id="portrait" src="media/professional.jpg">
+
         </main>
 
     </body>
