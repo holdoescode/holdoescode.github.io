@@ -1,4 +1,4 @@
-/* Navigation bar */
+/* NAVIGATION BAR - HOME PAGE */
 
 nav {
     font-family: 'Hind', sans-serif;
@@ -11,6 +11,7 @@ nav {
     grid-template-rows: 100%;
     justify-content: space-evenly;
     align-items: center;
+    height: 70px;
 }
 
 nav a {
@@ -19,14 +20,21 @@ nav a {
     font-size: 20px; /* Change to be responsive */
 }
 
-nav img {
-    max-height: 50px;
+#logo-placeholder {
+    max-height: 60px;
+}
+
+/* ICONS */
+
+#git-icon {
+    height: 90%;
 }
 
 /* Navigation bar end */
 
 
-/* Sets background image for whole page */
+
+/* Sets background image for home page */
 .backgroundImage {
     background-image: url("/media/homeBackgroundImage.png");
     background-size: cover;
@@ -40,7 +48,8 @@ main {
 }
 
 
-/* Flexbox set up */
+
+/* Flexbox set up home page */
 
 .flex-container-main { /* 2 items: heading text and portrait image */
     display: flex;
@@ -63,6 +72,9 @@ main {
 /* Flexbox end */
 
 
+
+/* Styling for text on home page */
+
 h1 {
     font-family: 'Lalezar', cursive;
     font-size: 7.5em; /* Change to be responsive */
@@ -75,44 +87,15 @@ h1 {
     text-shadow: 0.2rem 0em #FF00F5;
 }
 
-/*.grid-container {
-    display: grid;
-    grid-template-columns: 25% 25% 50%;
-    grid-template-rows: 60px 80px 50px;
-}*/
 
 #htmlLang {
-    /*grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 1;
-    grid-row-end: 1; */
     color:#000AFF;
 }
 
 #JSLang {
-    /*grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 1; */
     color:#FF00F5;
     margin-left: 3rem;
 }
-
-#tagline {
-    /* grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 2;*/
-}
-
-#workButton {
-    /*grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 3;
-    grid-row-end: 3; */
-    
-}
-
 
 h2 {
     font-family: 'Hind', sans-serif;
@@ -142,3 +125,29 @@ button {
 }   
 
 
+
+/* Nav bar - other pages */
+
+.pink-nav {
+    background-color: #FFD1E0;
+}
+
+#about-title {
+    text-align: center;
+}
+
+
+
+.about-flex-item {
+    border-radius: 7px;
+}
+
+div #item1 {
+    padding: 20px;
+    background-color: #FFD1E0;
+}
+
+div #item2 {
+    padding: 20px;
+    background-color: #FFD1E0;
+}
