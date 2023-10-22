@@ -1,15 +1,28 @@
+* {
+    font-family: 'Karla', sans-serif;
+    box-sizing: border-box; /* Changes box model, ensures height and width remain fixed. Border thickness and padding included inside of box */
+}
+
+body {
+    margin: 0; /* Resets user agent stylesheet */
+}
+
+
 /* NAVIGATION BAR - HOME PAGE */
 
 nav {
-    font-family: 'Hind', sans-serif;
     font-weight: 700;
+    position: fixed; /* Nav fixed regardless of scrolling */
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .nav-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 5fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 6fr 1fr 1fr 1fr;
     grid-template-rows: 100%;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     height: 70px;
 }
@@ -17,7 +30,11 @@ nav {
 nav a {
     color: black;
     text-decoration: none;
-    font-size: 20px; /* Change to be responsive */
+    font-size: 1.4rem; /* Change to be responsive */
+}
+
+nav a:hover {
+    color: #000AFF;
 }
 
 #logo-placeholder {
@@ -26,8 +43,15 @@ nav a {
 
 /* ICONS */
 
-#git-icon {
-    height: 90%;
+.icon {
+    max-height: 60%;
+    max-width: 60%;
+    margin-top: 20%;
+}
+
+#linkedin {
+    max-height: 3.5rem;
+    margin-top: 6%;
 }
 
 /* Navigation bar end */
@@ -76,10 +100,10 @@ main {
 /* Styling for text on home page */
 
 h1 {
-    font-family: 'Lalezar', cursive;
     font-size: 7.5em; /* Change to be responsive */
     line-height: 1em;
     margin-bottom: 0;
+    margin-top: 9rem;
 }
 
 .brightStyle { /*Anything with this class will have style applied */
@@ -87,27 +111,36 @@ h1 {
     text-shadow: 0.2rem 0em #FF00F5;
 }
 
+.pink {
+    color:#FF00F5;
+}
 
-#htmlLang {
+.blue {
     color:#000AFF;
 }
 
+.lalezar-font {
+    font-family: 'Lalezar', cursive;
+}
+
 #JSLang {
-    color:#FF00F5;
     margin-left: 3rem;
 }
 
-h2 {
+.hind-font {
     font-family: 'Hind', sans-serif;
-    font-size: 2em;
 }
 
-h3 {
-    font-family: 'Karla', sans-serif;
+.center {
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 0;
 }
 
 button {
-    font-family: 'Hind', sans-serif;
     font-size: 1.5em;
     font-weight: bold;
     background-color: transparent;
@@ -116,11 +149,12 @@ button {
 }
 
 #portrait {
+    border: .4rem solid black;
     border-radius: 50%;
-    max-height: 250px;
+    max-height: 230px;
     width: auto;
     float: right;
-    margin-top: 6rem;
+    margin-top: 8rem;
     margin-left: 3rem;
 }   
 
@@ -132,22 +166,49 @@ button {
     background-color: #FFD1E0;
 }
 
-#about-title {
-    text-align: center;
+
+/* ABOUT page flexbox set up */
+
+#about-flex-cont {
+    display: flex;
+    justify-content: space-between;
 }
-
-
 
 .about-flex-item {
     border-radius: 7px;
 }
 
-div #item1 {
-    padding: 20px;
+div .item1 {
+    padding: 30px;
     background-color: #FFD1E0;
+    width: 42%;
+    font-size: 1.2rem;
+    text-align: justify;
 }
 
 div #item2 {
-    padding: 20px;
+    padding: 30px;
     background-color: #FFD1E0;
+    width: 42%;
+    height: min-content;
+    font-size: 1.2rem;
+}
+
+
+/* PRACTICE PAGE */
+
+#practice-gymprs-table, th, td { /* Whole table */
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+#practice-gymprs-table, th { /* Table headings */
+    font-size: 1.3rem;
+    padding: 0.7rem;
+}
+
+#practice-gymprs-table, td { /* Table data */
+    font-size: 1rem;
+    padding: 0.4rem;
 }
