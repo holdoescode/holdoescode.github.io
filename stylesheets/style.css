@@ -38,7 +38,9 @@ nav a:hover {
 }
 
 #logo-placeholder {
-    max-height: 60px;
+    max-height: 6rem;
+    padding-left: 1.5rem;
+    padding-top: 0.3rem;
 }
 
 /* ICONS */
@@ -211,4 +213,32 @@ div #item2 {
 #practice-gymprs-table, td { /* Table data */
     font-size: 1rem;
     padding: 0.4rem;
+}
+
+.container {
+    display: flex;
+    text-align: center;
+    font-size: 1rem;
+    border: 2px solid black;
+    min-height: 150px;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content:center;
+}
+
+.side {
+    background-color: white;
+}
+
+.middle {
+    background-color: lightgrey;
+}
+
+.flex-item-practice {
+    min-height: 100px;
+    max-height: 130px;
+    max-width: 130px;
+    border: 2px solid black;
+    margin: 5px;
 }
