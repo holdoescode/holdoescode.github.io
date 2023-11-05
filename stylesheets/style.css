@@ -20,7 +20,7 @@ nav {
 
 .nav-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 6fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 6fr 0.6fr 0.6fr 0.6fr;
     grid-template-rows: 100%;
     justify-content: space-between;
     align-items: center;
@@ -30,6 +30,7 @@ nav {
 nav a {
     color: black;
     text-decoration: none;
+    text-align:center;
     font-size: 1.4rem; /* Change to be responsive */
 }
 
@@ -43,17 +44,28 @@ nav a:hover {
     padding-top: 0.3rem;
 }
 
+.left {
+    text-align: left; /* class for nav elements aligned to left */
+}
+
+#about {
+    position: relative;
+    left: 20%;
+}
+
 /* ICONS */
 
 .icon {
     max-height: 60%;
-    max-width: 60%;
-    margin-top: 20%;
+    margin-top: 30%;
+    position: relative;
+    left: 15%;
 }
 
 #linkedin {
     max-height: 3.5rem;
     margin-top: 6%;
+    max-width: 60%;
 }
 
 /* Navigation bar end */
@@ -183,7 +195,7 @@ button {
 div .item1 {
     padding: 30px;
     background-color: #FFD1E0;
-    width: 42%;
+    width: 49%;
     font-size: 1.2rem;
     text-align: justify;
 }
@@ -191,7 +203,7 @@ div .item1 {
 div #item2 {
     padding: 30px;
     background-color: #FFD1E0;
-    width: 42%;
+    width: 49%;
     height: min-content;
     font-size: 1.2rem;
 }
