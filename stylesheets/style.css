@@ -1,3 +1,7 @@
+@import url("tablet-style.css");
+
+@import url("mobile-style.css");
+
 * {
     font-family: 'Karla', sans-serif;
     box-sizing: border-box; /* Changes box model, ensures height and width remain fixed. Border thickness and padding included inside of box */
@@ -32,6 +36,7 @@ nav a {
     text-decoration: none;
     text-align:center;
     font-size: 1.4rem; /* Change to be responsive */
+    margin: 4px;
 }
 
 nav a:hover {
@@ -48,9 +53,9 @@ nav a:hover {
     text-align: left; /* class for nav elements aligned to left */
 }
 
-#about {
+.about {
     position: relative;
-    left: 20%;
+    right: 8%;
 }
 
 /* ICONS */
@@ -84,8 +89,6 @@ main {
     margin-right: 15%;
     margin-top: 2%;
 }
-
-
 
 /* Flexbox set up home page */
 

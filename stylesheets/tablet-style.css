@@ -1,0 +1,17 @@
+@media screen and (max-width: 1460px) {
+    tablet-nav-text {
+        font-size: 1.2rem;
+    }
+
+    .nav-container.tablet-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 0.6fr 0.6fr 0.6fr;
+    }
+
+    img.icon {
+        max-height: 79.3px;
+    }
+
+    img#linkedin {
+        max-height: 39px;
+    }
+}
