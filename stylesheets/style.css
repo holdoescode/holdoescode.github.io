@@ -211,6 +211,47 @@ div #item2 {
     font-size: 1.2rem;
 }
 
+/* PROJECTS PAGE */
+
+.project-flex-item {
+    border-radius: 7px;
+}
+
+.project-flex-container {
+    margin-bottom: 2%;
+}
+
+/* div .item1 {
+    padding: 30px;
+    background-color: #FFD1E0;
+    width: 30%;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+div #item2 {
+    padding: 30px;
+    background-color: #FFD1E0;
+    width: 30%;
+    height: min-content;
+    font-size: 1.2rem;
+} */
+
+div .project1 {
+    background-color: #FFD1E0;
+    width: 24%;
+    font-size: 1.2rem;
+    text-align: justify;
+    max-height: 25%;
+}
+
+div .project-flex-item img {
+    min-height: 100%;
+    max-width: 100%;
+    border-radius: 7px;
+}
+
+
 
 /* PRACTICE PAGE */
 
