@@ -123,6 +123,22 @@ h1 {
     margin-top: 9rem;
 }
 
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#title-animation {
+    animation: pulse 2s ease-in-out infinite;
+}
+
 .brightStyle { /*Anything with this class will have style applied */
     color: #000AFF;
     text-shadow: 0.2rem 0em #FF00F5;

@@ -48,47 +48,48 @@
 
                         <h3>Tell us about yourself...</h3>
                         
-                        <form>
+                        <form id="calorieDeficitForm">
                             <fieldset>
                                 <p>Sex Assigned at Birth:</p>
-                                <input type="radio" id="male" name="sex" value="Male">
+                                <input type="radio" id="male" name="sex" value="Male" required class="sex">
                                 <label for="male">Male</label><br>
-                                <input type="radio" id="female" name="sex" value="Female">
+                                <input type="radio" id="female" name="sex" value="Female" class="sex">
                                 <label for="female">Female</label><br><br>
 
                                 <label for="weight">Current body weight:</label>
-                                <input type="text" id="weight" name="weight"><br><br>
+                                <input type="number" id="weight" name="weight" required>kg</input><br><br>
                                 <!-- Add feature of increment/decrement button, only accepts number and st/lbs to kg toggle-->
 
                                 <label for="height">Height:</label>
-                                <input type="text" id="height" name="height"><br><br>
+                                <input type="text" id="height" name="height" required>cm<br><br>
 
-                                <label for="age">Age:</label>
-                                <input type="text" id="age" name="age"><br><br>
+                                <label for="age">Age (years):</label>
+                                <input type="number" id="age" name="age" required min="1" max="130"><br><br>
 
                                 <label for="activity-level">General activity level:</label>
-                                <select id="activity-level" name="activity-level">
+                                <select id="activity-level" name="activity-level" required>
                                     <option value="sedentary">Sedentary</option>
                                     <option value="moderately-active">Moderately active</option>
                                     <option value="vigorously-active">Vigorously active</option>
                                     <option value="extremely-active">Extremely active</option>
                                 </select><br><br>
-                            </fieldset>
-                        </form>
 
+                            </fieldset>
+                  
                     </div>
                     
                     <div class="about-flex-item" id="item2">
                         <h3>Your goals:</h3>
 
-                        <form>
+                        
                             <fieldset>
                                 <label for="goal-weight">Goal weight:</label>
-                                <input type="text" id="goal-weight" name="goal-weight"><br><br>
+                                <input type="text" id="goal-weight" name="goal-weight" required>kg<br><br>
 
-                                <label for="time">Time to achieve goal:</label>
-                                <input type="text" id="time" name="time"><br>
+                                <label for="time">Weeks to achieve goal:</label>
+                                <input type="text" id="time" name="time" required><br>
                             </fieldset>
+                            <input type="submit" value="Submit">
                         </form>
                     </div>
             
