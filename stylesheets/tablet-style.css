@@ -7,11 +7,12 @@
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 0.6fr 0.6fr 0.6fr;
     }
 
-    img.icon {
+    img.icon--git {
         max-height: 79.3px;
+        margin-top: 22%;
     }
 
-    img#linkedin {
+    img#icon--linkedin {
         max-height: 39px;
     }
 }

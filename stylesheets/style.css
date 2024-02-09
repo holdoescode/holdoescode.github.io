@@ -12,17 +12,14 @@ body {
 }
 
 
-/* NAVIGATION BAR - HOME PAGE */
+/* NAVIGATION BAR  */
 
-nav {
+.nav-container {
     font-weight: 700;
     position: fixed; /* Nav fixed regardless of scrolling */
     top: 0;
     left: 0;
     right: 0;
-}
-
-.nav-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 6fr 0.6fr 0.6fr 0.6fr;
     grid-template-rows: 100%;
@@ -31,7 +28,7 @@ nav {
     height: 70px;
 }
 
-nav a {
+nav a { /* links in nav bar */
     color: black;
     text-decoration: none;
     text-align:center;
@@ -43,31 +40,34 @@ nav a:hover {
     color: #000AFF;
 }
 
-#logo-placeholder {
+.nav--text--about { /* position of "ABOUT" in nav bar */
+    position: relative;
+    right: 8%;
+}
+
+/* Nav bar - other pages */
+
+.pink-nav {
+    background-color: #FFD1E0;
+}
+
+
+/* NAV ICONS & IMAGES */
+
+#logo-H {
     max-height: 6rem;
     padding-left: 1.5rem;
     padding-top: 0.3rem;
 }
 
-.left {
-    text-align: left; /* class for nav elements aligned to left */
-}
-
-.about {
-    position: relative;
-    right: 8%;
-}
-
-/* ICONS */
-
-.icon {
+.icon--git {
     max-height: 60%;
     margin-top: 30%;
     position: relative;
     left: 15%;
 }
 
-#linkedin {
+#icon--linkedin {
     max-height: 3.5rem;
     margin-top: 6%;
     max-width: 60%;
@@ -77,7 +77,45 @@ nav a:hover {
 
 
 
-/* Sets background image for home page */
+/* DESCRIPTIVE STYLES USED THROUGHOUT */
+
+.left {
+    text-align: left; /* class for nav elements aligned to left */
+}
+
+.brightStyle { /*Anything with this class will have style applied */
+    color: #000AFF;
+    text-shadow: 0.2rem 0em #FF00F5;
+}
+
+.pink {
+    color:#FF00F5;
+}
+
+.blue {
+    color:#000AFF;
+}
+
+.lalezar-font {
+    font-family: 'Lalezar', cursive;
+}
+
+.hind-font {
+    font-family: 'Hind', sans-serif;
+}
+
+.center {
+    text-align: center;
+}
+
+.para-space {
+    padding-top: 4%;
+}
+
+
+
+/* background image for home page */
+
 .backgroundImage {
     background-image: url("/media/homeBackgroundImage.png");
     background-size: cover;
@@ -114,7 +152,7 @@ main {
 
 
 
-/* Styling for text on home page */
+/* text on home page */
 
 h1 {
     font-size: 7.5em; /* Change to be responsive */
@@ -122,6 +160,12 @@ h1 {
     margin-bottom: 0;
     margin-top: 9rem;
 }
+
+.JSLang {
+    margin-left: 3rem;
+}
+
+/* ANIMATION - HEADER TEXT */
 
 @keyframes pulse {
     0% {
@@ -135,43 +179,15 @@ h1 {
     }
 }
 
-#title-animation {
+.title-animation {
     animation: pulse 2s ease-in-out infinite;
-}
-
-.brightStyle { /*Anything with this class will have style applied */
-    color: #000AFF;
-    text-shadow: 0.2rem 0em #FF00F5;
-}
-
-.pink {
-    color:#FF00F5;
-}
-
-.blue {
-    color:#000AFF;
-}
-
-.lalezar-font {
-    font-family: 'Lalezar', cursive;
-}
-
-#JSLang {
-    margin-left: 3rem;
-}
-
-.hind-font {
-    font-family: 'Hind', sans-serif;
-}
-
-.center {
-    text-align: center;
 }
 
 h2 {
     font-size: 2em;
     margin-bottom: 0;
 }
+
 
 button {
     font-size: 1.5em;
@@ -181,7 +197,7 @@ button {
     margin-top: 2rem;
 }
 
-#portrait {
+.portrait {
     border: .4rem solid black;
     border-radius: 50%;
     max-height: 230px;
@@ -193,81 +209,59 @@ button {
 
 
 
-/* Nav bar - other pages */
+/* ABOUT FLEXBOX (USED ON PROJECTS, ARTICLES, PRACTICE, CONTACT PAGES) */
 
-.pink-nav {
-    background-color: #FFD1E0;
-}
-
-
-/* ABOUT page flexbox set up */
-
-#about-flex-cont {
+#about--flex-container {
     display: flex;
     justify-content: space-between;
 }
 
-.about-flex-item {
+.about--flex-item {
     border-radius: 7px;
-}
-
-div .item1 {
-    padding: 30px;
-    background-color: #FFD1E0;
-    width: 49%;
-    font-size: 1.2rem;
-    text-align: justify;
-}
-
-div #item2 {
-    padding: 30px;
-    background-color: #FFD1E0;
-    width: 49%;
-    height: min-content;
-    font-size: 1.2rem;
-}
-
-/* PROJECTS PAGE */
-
-.project-flex-item {
-    border-radius: 7px;
-}
-
-.project-flex-container {
     margin-bottom: 2%;
 }
 
-/* div .item1 {
+div .left-text-box {
     padding: 30px;
     background-color: #FFD1E0;
-    width: 30%;
+    width: 49%;
     font-size: 1.2rem;
-    text-align: justify;
 }
 
-div #item2 {
+div #right-text-box {
     padding: 30px;
     background-color: #FFD1E0;
-    width: 30%;
+    width: 49%;
     height: min-content;
     font-size: 1.2rem;
-} */
-
-div .project1 {
-    background-color: #FFD1E0;
-    width: 24%;
-    font-size: 1.2rem;
-    text-align: justify;
-    max-height: 25%;
 }
 
-div .project-flex-item img {
-    min-height: 100%;
+/* PROJECTS & ARTICLES STYLE */
+
+div .project-box {
+    background-color: black;
+    width: 24%;
+}
+
+div .about--flex-item img {
+    height: 100%;
     max-width: 100%;
     border-radius: 7px;
+    object-fit: cover;
+    background-color: black;
+    opacity: 0.4;
 }
 
-
+#defecit-title { /* project page - hides title with transparency and positions it, shows on event */
+    position: relative;
+    bottom: 70%;
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    z-index: 10;
+    
+}
 
 /* PRACTICE PAGE */
 
