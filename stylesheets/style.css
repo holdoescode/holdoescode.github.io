@@ -239,7 +239,7 @@ div #right-text-box {
 /* PROJECTS & ARTICLES STYLE */
 
 div .project-box {
-    background-color: black;
+
     width: 24%;
 }
 
@@ -252,15 +252,28 @@ div .about--flex-item img {
     opacity: 0.4;
 }
 
+#project--flex-container {
+    display: flex;
+    justify-content: space-between;
+    height: 250px;
+}
+
 #defecit-title { /* project page - hides title with transparency and positions it, shows on event */
     position: relative;
     bottom: 70%;
     color: white;
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 2vw;
     font-weight: bold;
     z-index: 10;
-    
+}
+
+.pink-project {
+    background-color: #FFD1E0;
+}
+
+.black-project {
+    background-color: black;
 }
 
 /* PRACTICE PAGE */
