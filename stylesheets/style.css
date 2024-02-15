@@ -165,6 +165,15 @@ h1 {
     margin-left: 3rem;
 }
 
+#arrow {
+    position: relative;
+    font-size: 4rem;
+    margin-left: 45%;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-shadow: 0px 3px 4px #000
+}
+
 /* ANIMATION - HEADER TEXT */
 
 @keyframes pulse {
