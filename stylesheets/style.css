@@ -133,7 +133,6 @@ main {
 .flex-container-main { /* 2 items: heading text and portrait image */
     display: flex;
     justify-content: center;
-    width: max-content;
     height: 100%;
 }
 
@@ -181,7 +180,7 @@ h1 {
         transform: scale(1);
     }
     50% {
-        transform: scale(1.05);
+        transform: scale(1.025);
     }
     100% {
         transform: scale(1);
@@ -206,6 +205,14 @@ button {
     margin-top: 2rem;
 }
 
+button a {
+    text-decoration: none;
+}
+
+#workButton:hover {
+    background-color: white;
+}
+
 .portrait {
     border: .4rem solid black;
     border-radius: 50%;
@@ -215,6 +222,10 @@ button {
     margin-top: 8rem;
     margin-left: 3rem;
 }   
+
+#tagline {
+    text-wrap: wrap;
+}
 
 
 
@@ -329,4 +340,18 @@ div .about--flex-item img {
     max-width: 130px;
     border: 2px solid black;
     margin: 5px;
+}
+
+.article-container {
+    border-radius: 7px;
+    margin-bottom: 2%;
+}
+
+.article-title {
+    font-size: 4em;
+    margin-bottom: .5em;
+}
+
+.article-intro {
+    margin-bottom: 2rem;
 }
