@@ -112,6 +112,10 @@ nav a:hover {
     padding-top: 4%;
 }
 
+ul.no-bullets {
+    list-style-type: none;
+    padding-left: 4%;
+}
 
 
 /* background image for home page */

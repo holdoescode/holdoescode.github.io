@@ -31,3 +31,4 @@ function onMouseOverProjects() {
 function onMouseLeaveProjects() {
     title.innerHTML = "Calorie Defecit Calculator";
 }
+
