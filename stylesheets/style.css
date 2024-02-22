@@ -96,6 +96,10 @@ nav a:hover {
     color:#000AFF;
 }
 
+.grayed {
+    color:  #6e5169
+}
+
 .lalezar-font {
     font-family: 'Lalezar', cursive;
 }
@@ -298,6 +302,16 @@ div .about--flex-item img {
 
 .black-project {
     background-color: black;
+}
+
+/* REMOVE BOTH BELOW */
+#no-img-display { /*REMOVE - HIDES IMAGE ON SECOND ROW OF PROJECT FLEX ITEMS TO KEEP HEIGHT THE SAME */
+    opacity: 0;
+}
+
+#position-coming-soon {
+    position: relative;
+    bottom: 102%;
 }
 
 /* PRACTICE PAGE */
