@@ -121,6 +121,10 @@ ul.no-bullets {
     padding-left: 4%;
 }
 
+.del-link-underline {
+    text-decoration: none;
+}
+
 
 /* background image for home page */
 
