@@ -21,7 +21,7 @@ body {
     left: 0;
     right: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 6fr 0.6fr 0.6fr 0.6fr;
+    grid-template-columns: 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr 5fr 0.6fr 0.6fr 0.6fr;
     grid-template-rows: 100%;
     justify-content: space-between;
     align-items: center;
@@ -43,6 +43,11 @@ nav a:hover {
 .nav--text--about { /* position of "ABOUT" in nav bar */
     position: relative;
     right: 8%;
+}
+
+#back-button {
+    max-height: 2rem;
+    margin-top: 6%;
 }
 
 /* Nav bar - other pages */
