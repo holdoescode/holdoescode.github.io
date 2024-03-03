@@ -260,6 +260,7 @@ button a {
 .about--flex-item {
     border-radius: 7px;
     margin-bottom: 2%;
+    min-height: 85%;
 }
 
 div .left-text-box {
