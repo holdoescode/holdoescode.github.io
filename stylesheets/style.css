@@ -37,7 +37,7 @@ nav a { /* links in nav bar */
 }
 
 nav a:hover {
-    color: #000AFF;
+    color: #CD70FB;
 }
 
 .nav--text--about { /* position of "ABOUT" in nav bar */
@@ -88,17 +88,12 @@ nav a:hover {
     text-align: left; /* class for nav elements aligned to left */
 }
 
-.brightStyle { /*Anything with this class will have style applied */
-    color: #000AFF;
-    text-shadow: 0.2rem 0em #FF00F5;
-}
-
 .pink {
     color:#FF00F5;
 }
 
 .blue {
-    color:#000AFF;
+    color: #FFD47E;
 }
 
 .grayed {
@@ -132,6 +127,36 @@ ul.no-bullets {
 
 .pink-background {
     background-color:#FFD1E0
+}
+
+/* New Colours: */ 
+
+.green-text {
+    color: #47F5BC;
+}
+
+.green {
+    background-color: #47F5BC;
+}
+
+.purple-text {
+    color: #CD70FB;
+}
+
+.purple {
+    background-color: #CD70FB;
+}
+
+.orange-text {
+    color: #FFD47E;
+}
+
+.orange {
+    background-color: #FFD47E;
+}
+
+.hollie { /* Adds black border around 'hollie' on home page */
+    -webkit-text-stroke: 0.5px black;
 }
 
 
@@ -182,7 +207,16 @@ h1 {
 }
 
 .JSLang {
-    margin-left: 3rem;
+    margin-left: 1rem;
+}
+
+h2.flex-item-lang { /* Style for language names - white background and borders */
+    background-color: white;
+    padding-inline: 2%;
+    
+    border-radius: 0.6rem;
+    border: 2px solid black;
+    margin-top: 2%;
 }
 
 #arrow {
@@ -191,7 +225,8 @@ h1 {
     margin-left: 45%;
     margin-top: 0;
     margin-bottom: 0;
-    text-shadow: 0px 3px 4px #000
+    text-shadow: 0px 3px 4px #000;
+    -webkit-text-stroke: 2px black;
 }
 
 /* ANIMATION - HEADER TEXT */
@@ -218,12 +253,15 @@ h2 {
 }
 
 
-button {
+#workButton {
     font-size: 1.5em;
     font-weight: bold;
     background-color: transparent;
-    border: 3px solid #000AFF;
+    border: 3px solid black;
     margin-top: 2rem;
+    padding-inline: 2%;
+    padding-block: 1%;
+    min-height: 3.5rem;
 }
 
 button a {
@@ -246,6 +284,7 @@ button a {
 
 #tagline {
     text-wrap: wrap;
+    margin-top: 3%;
 }
 
 
@@ -260,7 +299,6 @@ button a {
 .about--flex-item {
     border-radius: 7px;
     margin-bottom: 2%;
-    min-height: 85%;
 }
 
 div .left-text-box {
