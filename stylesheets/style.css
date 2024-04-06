@@ -321,6 +321,8 @@ div #right-text-box {
 div .project-box {
 
     width: 24%;
+    max-width: 310px;
+    min-width: 170px;
 }
 
 div .about--flex-item img {
@@ -491,6 +493,10 @@ div .about--flex-item img {
     margin-right: 11%;
     margin-top: 2%;
     border-radius: .5rem;
+  }
+
+  #hiddenDiv {
+    display: none;
   }
 
   .glass {
