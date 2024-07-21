@@ -11,8 +11,7 @@ document.getElementById('react-defecit-calc').addEventListener("mouseleave", onM
 
 // Variables for outer div element, background image and text to display on mouse over
 let element = document.getElementById('react-defecit-calc');
-let title = document.getElementById('defecit-title');
-let image = document.getElementById('defecit-image');
+let title = document.querySelector('.img-title');
 
 
 
